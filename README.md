@@ -18,9 +18,12 @@ A CSS module that allows you to display the Bookmarks Toolbar in the Zen Browser
 1. Right-click on the toolbar and select `Customize Toolbar...`.
 2. Drag and drop the `Bookmarks toolbar items` above the middle section of the sidebar.
 3. Click `Done` in the bottom right corner to save your changes.
+4. Adjust the sidebar width slightly wider than its narrowest setting to prevent visual glitches when switching workspaces.
 
 > [!NOTE]
 > It might be tricky to drag it into the exact position on the first try. You can drag it into the section first and then adjust it upward. Give it a few tries!
+> 
+> If the `Bookmarks toolbar items` button disappears, simply switch to another tab and back, or reopen the `Customize Toolbar...` page to restore it.
 
 ![Customize Toolbar Preview](assets/preview1.png)
 
@@ -38,6 +41,7 @@ This is useful if you use emojis as folder names and prefer a cleaner look.
 
 ## 😞 Known Limitations
 
+- The sidebar width will be forced wider by the Bookmarks Toolbar, so it is recommended to keep bookmark names short and avoid placing too many items in it.
 - Dragging items other than the Bookmarks Toolbar into this area is not recommended, as it may cause visual glitches.
 - High likelihood of incompatibility with other CSS modules that utilize this same area.
 
