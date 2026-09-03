@@ -1,0 +1,12 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Hide folder icon */
+#PlacesToolbarItems {
+  & .toolbarbutton-icon {
+    display: none !important;
+  }
+  & .bookmark-item {
+    min-width: 28px !important;
+  }
+}
+
