@@ -8,21 +8,19 @@
 #PlacesToolbarItems .toolbarbutton-text[value=""] {
   display: none !important;
 }
+#PlacesToolbarItems label {
+  width: initial !important;
+}
+#PlacesToolbarItems .menu-highlightable-text {
+  display: none !important;
+}
 #TabsToolbar-customization-target toolbaritem {
   background: none !important;
 }
-toolbarbutton.bookmark-item label {
-  width: auto !important;
-}
-menuitem .menu-highlightable-text {
-  display: none !important;
-}
 
 /* Single toolbar mode */
-[zen-single-toolbar="true"] {
-  #TabsToolbar-customization-target {
-    padding-top: 6px !important;
-  }
+[zen-single-toolbar="true"] #TabsToolbar-customization-target {
+  padding-top: 6px !important;
 }
 
 /* Customization mode */
