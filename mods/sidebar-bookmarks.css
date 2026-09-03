@@ -2,8 +2,11 @@
 
 /* Bookmark toolbar */
 #PlacesToolbarItems {
-  justify-content: center !important;
+  justify-content: space-around !important;
   height: 36px !important;
+}
+#PlacesToolbarItems .toolbarbutton-text[value=""] {
+  display: none !important;
 }
 #TabsToolbar-customization-target toolbaritem {
   background: none !important;
