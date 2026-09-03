@@ -1,0 +1,37 @@
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Bookmark toolbar */
+#PlacesToolbarItems {
+  justify-content: center !important;
+  height: 36px !important;
+}
+#TabsToolbar-customization-target toolbaritem {
+  background: none !important;
+}
+toolbarbutton.bookmark-item label {
+  width: auto !important;
+}
+menuitem .menu-highlightable-text {
+  display: none !important;
+}
+
+/* Single toolbar mode */
+[zen-single-toolbar="true"] {
+  #TabsToolbar-customization-target {
+    padding-top: 6px !important;
+  }
+}
+
+/* Customization mode */
+[customizing] {
+  #TabsToolbar-customization-target {
+    visibility: visible !important;
+    border: 1px dashed !important;
+    border-radius: 2px !important;
+    margin-top: 10px !important;
+    margin-right: 2px !important;
+  }
+  #tabbrowser-tabs > * {
+    display: none !important;
+  }
+}
