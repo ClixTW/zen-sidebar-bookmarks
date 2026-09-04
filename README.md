@@ -42,6 +42,7 @@ This is useful if you use emojis as folder names and prefer a cleaner look.
 ## 😞 Known Limitations
 
 - The sidebar width will be forced wider by the Bookmarks Toolbar, so it is recommended to keep bookmark names short and avoid placing too many items in it.
+- When switching workspaces, the Bookmarks Toolbar may flicker very briefly as it is repositioned. I haven't found a way to fix this yet.
 - Dragging items other than the Bookmarks Toolbar into this area is not recommended, as it may cause visual glitches.
 - High likelihood of incompatibility with other CSS modules that utilize this same area.
 
