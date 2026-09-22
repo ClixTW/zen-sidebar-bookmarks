@@ -12,15 +12,30 @@
     display: none !important;
   }
 }
+@media (-moz-pref("zen.sidebar.bookmarks.overflow", true)) {
+  #PlacesToolbarItems {
+    justify-content: flex-start !important;
+    > toolbarbutton {
+      min-width: initial !important;
+    }
+  }
 }
-#PlacesToolbarItems label {
-  width: initial !important;
+#PlacesChevronPopup,
+#PlacesToolbarItems {
+  .menu-highlightable-text {
+    display: none !important;
+  }
+  .menu-accel {
+    width: fit-content !important;
+  }
 }
-#PlacesToolbarItems .menu-highlightable-text {
+#personal-bookmarks {
+  background: none !important;
+}
+#PlacesChevron .toolbarbutton-text {
   display: none !important;
 }
-#TabsToolbar-customization-target toolbaritem {
-  background: none !important;
+
 /* Hide folder icon */
 @media (-moz-pref("zen.sidebar.bookmarks.hide-folder-icon", true)) {
   #PlacesToolbarItems .toolbarbutton-icon[type="menu"] {
