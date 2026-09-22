@@ -19,7 +19,7 @@
 }
 
 /* Single toolbar mode */
-[zen-single-toolbar="true"] #TabsToolbar-customization-target {
+[zen-single-toolbar="true"] #TabsToolbar-customization-target:has(#personal-bookmarks) {
   padding-top: 6px !important;
 }
 
