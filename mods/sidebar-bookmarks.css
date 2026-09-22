@@ -4,9 +4,14 @@
 #PlacesToolbarItems {
   justify-content: space-around !important;
   height: var(--tab-min-height) !important;
+  contain: inline-size !important;
+  > toolbarbutton {
+    min-width: 0 !important;
+  }
+  .toolbarbutton-text[value=""] {
+    display: none !important;
+  }
 }
-#PlacesToolbarItems .toolbarbutton-text[value=""] {
-  display: none !important;
 }
 #PlacesToolbarItems label {
   width: initial !important;
