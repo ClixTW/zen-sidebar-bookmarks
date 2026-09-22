@@ -3,7 +3,7 @@
 /* Bookmark toolbar */
 #PlacesToolbarItems {
   justify-content: space-around !important;
-  height: 36px !important;
+  height: var(--tab-min-height) !important;
 }
 #PlacesToolbarItems .toolbarbutton-text[value=""] {
   display: none !important;
