@@ -16,6 +16,15 @@
 }
 #TabsToolbar-customization-target toolbaritem {
   background: none !important;
+/* Hide folder icon */
+@media (-moz-pref("zen.sidebar.bookmarks.hide-folder-icon", true)) {
+  #PlacesToolbarItems .toolbarbutton-icon[type="menu"] {
+    display: none !important;
+  }
+  #PlacesToolbarItems > .bookmark-item {
+    flex: 1 1 auto !important;
+    min-width: max-content !important;
+  }
 }
 
 /* Single toolbar mode */
