@@ -18,7 +18,6 @@ A CSS module that allows you to display the Bookmarks Toolbar in the Zen Browser
 1. Right-click on the toolbar and select `Customize Toolbar...`.
 2. Drag and drop the `Bookmarks toolbar items` above the middle section of the sidebar.
 3. Click `Done` in the bottom right corner to save your changes.
-4. Adjust the sidebar width slightly wider than its narrowest setting to prevent visual glitches when switching workspaces.
 
 > [!NOTE]
 > It might be tricky to drag it into the exact position on the first try. You can drag it into the section first and then adjust it upward. Give it a few tries!
@@ -29,19 +28,28 @@ A CSS module that allows you to display the Bookmarks Toolbar in the Zen Browser
 
 ## ⚙️ Additional Options
 
-If you want to hide folder icons on the Bookmarks Toolbar, uncomment the following line in `userChrome.css`:
+Here are some options you can customize to suit your preferences.
 
-```css
-@import "mods/hide-bookmark-folder-icons.css";
-```
+The setup is simple: open `about:config`, create the corresponding preference, and set it to `true`. To disable an option, either set it to `false` or simply remove the preference.
 
-This is useful if you use emojis as folder names and prefer a cleaner look.
+- **Hide folder icons:** Useful if you use emojis as folder names and prefer a cleaner look.
 
-![Hide Folder Icons Preview](assets/preview2.png)
+   ```
+   zen.sidebar.bookmarks.hide-folder-icon
+   ```
+
+   ![Hide Folder Icons Preview](assets/preview2.png)
+
+- **Show overflow menu:** Useful if you have many folders and want items that don't fit in the available sidebar width to be moved into the overflow menu.
+
+   ```
+   zen.sidebar.bookmarks.overflow
+   ```
+
+   When enabled, the bookmarks toolbar is left-aligned, and items that exceed the available sidebar width are moved into the overflow menu.
 
 ## 😞 Known Limitations
 
-- The sidebar width will be forced wider by the Bookmarks Toolbar, so it is recommended to keep bookmark names short and avoid placing too many items in it.
 - When switching workspaces, the Bookmarks Toolbar may flicker very briefly as it is repositioned. I haven't found a way to fix this yet.
 - Dragging items other than the Bookmarks Toolbar into this area is not recommended, as it may cause visual glitches.
 - High likelihood of incompatibility with other CSS modules that utilize this same area.
